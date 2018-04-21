@@ -165,7 +165,7 @@ gulp.task('webserver', () => {
 		},
 		notify: false,
 		directory: true,
-		port: '8888',
+		port: '8887',
 		open: 'external'
 	})
 })
