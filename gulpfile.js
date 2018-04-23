@@ -183,8 +183,8 @@ gulp.task('sprite', () => {
 	var spriteData = gulp.src(path.toolSrc + 'sprites/*.png')
 		.pipe(spritesmith({
 			imgName: 'sprite.png',
-			cssName: 'sprite.scss',
-			cssFormat: 'scss',
+			cssName: 'sprite.css',
+			cssFormat: 'css',
 		}));
 	return spriteData.pipe(gulp.dest(path.toolDist));
 })
