@@ -16,45 +16,39 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-1 {
-  background-image: url(sprite.png);
-  background-position: -28px -27px;
-  width: 27px;
-  height: 27px;
-}
-.icon-2 {
-  background-image: url(sprite.png);
-  background-position: 0px -27px;
-  width: 28px;
-  height: 28px;
-}
-.icon-3 {
-  background-image: url(sprite.png);
-  background-position: 0px -55px;
-  width: 27px;
-  height: 27px;
-}
-.icon-4 {
-  background-image: url(sprite.png);
-  background-position: -65px 0px;
-  width: 26px;
-  height: 29px;
-}
-.icon-5 {
+.icon-01 {
   background-image: url(sprite.png);
   background-position: 0px 0px;
-  width: 33px;
-  height: 27px;
+  width: 103px;
+  height: 103px;
 }
-.icon-6 {
+.icon-02 {
   background-image: url(sprite.png);
-  background-position: -33px 0px;
-  width: 32px;
-  height: 26px;
+  background-position: -103px 0px;
+  width: 103px;
+  height: 103px;
 }
-.icon-7 {
+.icon-03 {
   background-image: url(sprite.png);
-  background-position: -27px -55px;
-  width: 27px;
-  height: 16px;
+  background-position: 0px -103px;
+  width: 103px;
+  height: 103px;
+}
+.icon-04 {
+  background-image: url(sprite.png);
+  background-position: -103px -103px;
+  width: 103px;
+  height: 103px;
+}
+.icon-05 {
+  background-image: url(sprite.png);
+  background-position: -206px 0px;
+  width: 103px;
+  height: 103px;
+}
+.icon-06 {
+  background-image: url(sprite.png);
+  background-position: -206px -103px;
+  width: 103px;
+  height: 103px;
 }

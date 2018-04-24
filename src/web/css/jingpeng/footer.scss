@@ -86,6 +86,9 @@
     }
 }
 .bottom{
+    position: relative;
+    width:100%;
+    padding-top:64px;
     .list{
         float: left;
         padding-left: 34px;
@@ -104,10 +107,25 @@
             font-weight: normal;
         }
     }
+    .right{
+        position: absolute;
+        top:28px;
+        right:23px;
+        .item{
+            float: left;
+            margin-left: 25px;
+            .title{
+                color:$color_main;
+                font-size: 16px;
+                text-align: center;
+                margin-bottom:13px;
+            }
+        }
+    }
 }
 .copyright{
     width:100%;
-    padding:40px 0 60px;
+    padding:50px 0 60px;
     color:#929292;
     .left{
         padding-left: 34px;
@@ -125,7 +143,7 @@
 
 //icon
 .icon-1,.icon-2,.icon-3,.icon-qq,.icon-wechat,.icon-phone,.icon-arrow,{
-    background-image: url(../../imgs/jingpeng/index-footer-sprites.png);
+    background-image: url(../../imgs/jingpeng/footer-sprites.png);
 } 
 .icon-1{
     background-position: -28px -27px;

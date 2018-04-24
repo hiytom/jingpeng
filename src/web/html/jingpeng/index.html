@@ -37,9 +37,135 @@
 	</header>
 
 	<!-- banner -->
-	<!-- <section class="mod-banner"></section> -->
+	<section class="mod-banner">
+		<div class="swiper-container">
+			<ul class="list swiper-wrapper">
+				<li class="item swiper-slide"></li>
+				<li class="item swiper-slide"></li>
+				<li class="item swiper-slide"></li>
+			</ul>
+		</div>
+		<div class="swiper-pagination"></div>
+	</section>
+
+	<!-- 一体化解决方案 -->
+	<section class="mod-solve">
+		<div class="wrap-common">
+			<h2 class="title">一体化解决方案</h2>
+			<div class="desc">京鹏环宇畜牧现代化猪场建造交钥匙工程是集“猪场选址、规划设计、工程建造、配套设备、管理培训、技术服务” 为一体化整体解决方案。</div>
+			<ul class="list">
+				<li class="item">
+					<dt>
+						<i class="icon icon-01"></i>
+					</dt>
+					<dd>猪场选址</dd>
+				</li>
+				<li class="item">
+					<dt>
+						<dt>
+							<i class="icon icon-02"></i>
+						</dt>
+						<dd>规划设计</dd>
+					</dt>
+				</li>
+				<li class="item">
+					<dt>
+						<dt>
+							<i class="icon icon-03"></i>
+						</dt>
+						<dd>工程建造</dd>
+					</dt>
+				</li>
+				<li class="item">
+					<dt>
+						<dt>
+							<i class="icon icon-04"></i>
+						</dt>
+						<dd>配套设备</dd>
+					</dt>
+				</li>
+				<li class="item">
+					<dt>
+						<dt>
+							<i class="icon icon-05"></i>
+						</dt>
+						<dd>管理培训</dd>
+					</dt>
+				</li>
+				<li class="item">
+					<dt>
+						<i class="icon icon-06"></i>
+					</dt>
+					<dd>技术服务</dd>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 交钥匙工程 -->
+	<section class="mod-key mod-widh100" style="background-image:url('../../imgs/jingpeng/test1.png')">
+		<div class="wrap">
+			<img src="../../imgs/jingpeng/index-key.png" alt="" class="img">
+			<div class="en">TURNKEY PROJECT</div>
+			<div class="cn">交钥匙工程 6.0</div>
+			<div class="desc">一把金钥匙，开启养猪新世界</div>
+			<div class="link">
+				<a href="#" class="left">了解更多</a>
+				<a href="#" class="right">马上咨询</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="mod-widh100" style="background-color:red;"></section>
+
+	<section class="mod-widh100" style="background-color:blue;"></section>
+
+	<!-- 50%栅格 -->
+	<section class="mod-col2 cf">
+		<div class="col-2 left">
+			<div class="content"  style="background-color:blue;"></div>
+		</div>
+		<div class="col-2 right">
+			<div class="content" style="background-color:red;"></div>
+		</div>
+	</section>
+
+	<section class="mod-col2 cf">
+		<div class="col-2 left">
+			<div class="content"  style="background-color:blue;"></div>
+		</div>
+		<div class="col-2 right">
+			<div class="content" style="background-color:red;"></div>
+		</div>
+	</section>
+
+	<section class="mod-col2 cf">
+		<div class="col-2 left">
+			<div class="content"  style="background-color:blue;"></div>
+		</div>
+		<div class="col-2 right">
+			<div class="content" style="background-color:red;"></div>
+		</div>
+	</section>
 
 	<!-- footer -->
 	@@include('footer.html')
 </body>
+<script src="../../js/plugin/jquery.min.js"></script>
+<script src="../../js/plugin/swpier.min.js"></script>
+<script>
+	function initBanner(){
+		var mySwiper = new Swiper('.swiper-container', {
+			autoplay: true,//可选选项，自动滑动
+			pagination: {
+				el: '.swiper-pagination',
+				clickable :true,
+			},
+		})
+	}
+
+	$(function(){
+		initBanner();
+	})
+</script>
 </html>

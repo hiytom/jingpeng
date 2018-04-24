@@ -1,13 +1,15 @@
 @import 'base.scss';
+@import '../plugin/swiper';
+
+
 .header {
     height: 80px;
     .logo {
         display: inline-block;
-        width: 249px;
+        width: 217px;
         height: 80px;
         .img {
             @extend .g_max;
-            margin-left: -18px; //因为logo留有白边
         }
     }
     .nav-list {
@@ -18,6 +20,7 @@
             line-height: 80px;
             font-size: 16px;
 			margin-left: 26px;
+			z-index: 2;
 			.list{
 				display: none;
 				@extend .g_c_mid;
@@ -52,7 +55,200 @@
 }
 
 .mod-banner {
+	position: relative;
     width: 100%;
-    height: 738px;
-    background-color: red;
+	background-color: red;
+	.item{
+		height: 100%;
+		height: 738px;
+		&:nth-of-type(1){
+			background-color: red;
+		}
+		&:nth-of-type(2){
+			background-color: blue;
+		}
+		&:nth-of-type(3){
+			background-color: yellow;
+		}
+	}
+	.swiper-pagination{
+		@extend .g_c_mid;
+		bottom: 56px;
+		.swiper-pagination-bullet{
+			margin:0 5px;
+		}
+		.swiper-pagination-bullet-active{
+			background:$color_main;
+		}
+	}
+}
+
+// 一体化解决方案
+.mod-solve{
+	.title{
+		font-size: 40px;
+		text-align: center;
+		color:$color_main;
+		margin-top: 74px;
+		letter-spacing: 5px;
+		font-weight: normal;
+	}
+	.desc{
+		position: relative;
+		font-size: 21px;
+		padding:0 58px;
+		text-align: center;
+		line-height: 2;
+		margin:22px 0 102px;
+		&:after{
+			content: " ";
+			@extend .g_c_mid;
+			bottom:-41px;
+			width:64px;
+			height: 2px;
+			background-color: $color_main;
+		}
+	}
+	.list{
+		text-align: center;
+		.item{
+			display: inline-block;
+			margin:0 37px;
+			dd{
+				font-size: 18px;
+				color:$color_main;
+				margin-top: 12px;
+			}
+		}
+	}
+	.icon-01,.icon-02,.icon-03,.icon-04,.icon-05,.icon-06{
+		background-image: url(../../imgs/jingpeng/index-solve.png);
+	}
+	.icon-01 {
+		background-position: 0px 0px;
+		width: 103px;
+		height: 103px;
+	  }
+	  .icon-02 {
+		background-position: -103px 0px;
+		width: 103px;
+		height: 103px;
+	  }
+	  .icon-03 {
+		background-position: 0px -103px;
+		width: 103px;
+		height: 103px;
+	  }
+	  .icon-04 {
+		background-position: -103px -103px;
+		width: 103px;
+		height: 103px;
+	  }
+	  .icon-05 {
+		background-position: -206px 0px;
+		width: 103px;
+		height: 103px;
+	  }
+	  .icon-06 {
+		background-position: -206px -103px;
+		width: 103px;
+		height: 103px;
+	  }
+}
+
+// 交钥匙工程
+.mod-key{
+	position: relative;
+	margin-top:79px;
+	&:after{
+		content:" ";
+		position: absolute;
+		display: block;
+		width:100%;
+		height:100%;
+		top:0;
+		left: 0;
+		background-color: $color_main;
+		opacity: .6;
+	}
+	.wrap{
+		position: relative;
+		padding:92px;
+		text-align: center;
+		color:white;
+		z-index: 2;
+		.en,.cn{
+			font-size: 63px;
+		}
+		.en{
+			letter-spacing: 5px;
+			margin:8px 0 -2px;
+		}
+		.cn{
+			position: relative;
+			font-weight: bolder;
+			&:after{
+				content: " ";
+				@extend .g_c_mid;
+				top: 135px;
+				display: block;
+				width:70px;
+				height: 2px;
+			}
+		}
+		.desc{
+			font-size: 21px;
+			margin-top:107px;
+		}
+		.link{
+			border:1px solid #9fd925;
+			font-size: 0;
+			display: inline-block;
+			margin-top:48px;
+			.left,.right{
+				width:50%;
+				font-size:16px;
+				color:white;
+				padding: 0px 10px;
+				line-height:36px;
+				display: inline-block
+			}
+			.left{
+				background-color:#9fd925;
+			}
+		}
+	}
+}
+
+.mod-widh100{
+	width:100%;
+	height:694px;
+	background-size: cover;
+	background-position: center center;
+	margin-bottom: 12px;
+}
+
+//50%栅格
+.mod-col2{
+	width:100%;
+	font-size: 0;
+	.col-2{
+		display: inline-block;
+		width:50%;
+		height:580px;
+		background-size: cover;
+		background-position: center center;
+		margin-bottom: 12px;
+	}
+	.col-2.left{
+		float: left;
+		padding-right: 6px;
+	}
+	.col-2.right{
+		float: right;
+		padding-left: 6px;
+	}
+	.content{
+		@extend .g_max;
+	}
 }
