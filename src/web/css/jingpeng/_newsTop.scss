@@ -1,0 +1,44 @@
+.mod-banner{
+    width:100%;
+    height:450px;
+    @extend .g_bg_img;
+    .wrap-common{
+        position: relative;
+        height: 100%;
+    }
+    .txt{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -22.5px;
+        font-size: 30px;
+        color:white;
+    }
+}
+.news-nav{
+    margin-top:-60px;
+    .wrap-common{
+        background-color: white;
+    }
+    .maintitle{
+        padding:80px 0 112px;
+        font-size: 42px;
+        text-align: center;
+    }
+    .nav{
+        width:100%;
+        font-size:20px;
+        border-bottom: 1px solid #909090;
+        padding:0 40px 22px;
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+            .item{
+                float: left;
+                margin-left: 70px;
+            }
+        }
+    }
+}

@@ -6,73 +6,57 @@
         <link rel="stylesheet" href="../../css/jingpeng/news.css">
 </head>
 <body>
-        @@include('topbar.html')
+        @@include('_topbar.html')
 
         <!-- header -->
-        @@include('header.html')
+        @@include('_header.html')
 
-        <section class="mod-banner" style="background-image:url(../../imgs/jingpeng/test2.png)">
-            <div class="wrap-common">
-                <div class="txt">光阴荏苒京鹏伴 人生何处不相逢</div>
-            </div>
-        </section>
+        <!-- 新闻顶部 -->
+        @@include('_newsTop.html')
 
         <section class="mod-main">
-            <div class="wrap-common">
-                <h2 class="maintitle">新闻中心</h2>
-                <!-- 面包屑 -->
-                <div class="nav cf">
-                    <div class="left">
-                        <a href="#">首页</a> > > <a href="#">新闻中心</a>
-                    </div>
-                    <div class="right">
-                        <ul class="list">
-                            <li class="item"><a href="#">京鹏动态</a></li>
-                            <li class="item"><a href="#">行业新闻</a></li>
-                            <li class="item"><a href="#">行业分析</a></li>
-                            <li class="item"><a href="#">养殖技术</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="mod-act">
-                    <h2 class="_title">最新动态
-                        <a href="#" class="link">查看全部 <i class="icon icon-arrow-right-blue"></i></a>
-                    </h2>
-                    <div class="content cf">
-                        <div class="left">
-                            <div class="top" style="background-image:url('../../imgs/jingpeng/test3.png')"></div>
-                            <div class="bottom">
-                                <div class="date">2018年3月27日</div>
-                                <div class="subtitle"><b>山东蓝大与京鹏环宇畜牧达成合作</b></div>
-                                <div class="desc">共建生态农牧产业项目</div>
-                                <a href="" class="link">更多</a>
+            <!-- 最新动态 -->
+            <div class="mod-new-1">
+                <div class="wrap-common">
+                    <div class="mod-act">
+                        <h2 class="_title">最新动态
+                            <a href="#" class="link">查看全部 <i class="icon icon-arrow-right-blue"></i></a>
+                        </h2>
+                        <div class="content cf">
+                            <div class="left">
+                                <div class="top" style="background-image:url('../../imgs/jingpeng/test3.png')"></div>
+                                <div class="bottom">
+                                    <div class="date">2018年3月27日</div>
+                                    <div class="subtitle"><b>山东蓝大与京鹏环宇畜牧达成合作</b></div>
+                                    <div class="desc">共建生态农牧产业项目</div>
+                                    <a href="" class="link">更多</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="right">
-                            <ul class="list">
-                                <li class="item">
-                                    <div class="date">2018年3月16日 </div>
-                                    <div class="title"><b>数据创造价值 打造智能牧场</b></div>
-                                    <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
-                                    <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
-                                    <a href="#" class="link">继续阅读 > ></a>
-                                </li>
-                                <li class="item">
-                                    <div class="date">2018年3月16日 </div>
-                                    <div class="title"><b>数据创造价值 打造智能牧场</b></div>
-                                    <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
-                                    <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
-                                    <a href="#" class="link">继续阅读 > ></a>
-                                </li>
-                                <li class="item">
-                                    <div class="date">2018年3月16日 </div>
-                                    <div class="title"><b>数据创造价值 打造智能牧场</b></div>
-                                    <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
-                                    <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
-                                    <a href="#" class="link">继续阅读 > ></a>
-                                </li>
-                            </ul>
+                            <div class="right">
+                                <ul class="list">
+                                    <li class="item">
+                                        <div class="date">2018年3月16日 </div>
+                                        <div class="title"><b>数据创造价值 打造智能牧场</b></div>
+                                        <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
+                                        <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
+                                        <a href="#" class="link">继续阅读 > ></a>
+                                    </li>
+                                    <li class="item">
+                                        <div class="date">2018年3月16日 </div>
+                                        <div class="title"><b>数据创造价值 打造智能牧场</b></div>
+                                        <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
+                                        <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
+                                        <a href="#" class="link">继续阅读 > ></a>
+                                    </li>
+                                    <li class="item">
+                                        <div class="date">2018年3月16日 </div>
+                                        <div class="title"><b>数据创造价值 打造智能牧场</b></div>
+                                        <div class="subtitle">京鹏环宇畜牧获阿菲金最佳服务奖</div>
+                                        <div class="desc">2018年3月15日-16日，在素有‘天下第一滩’美誉的北海银滩，背景京鹏环宇畜牧（证券简称：环宇畜牧，证券代码：420287）战略合作伙伴阿菲金成功举办了2018年渠道商峰会</div>
+                                        <a href="#" class="link">继续阅读 > ></a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -195,6 +179,6 @@
         </section>
 
 
-        @@include('footer.html')
+        @@include('_footer.html')
 </body>
 </html>
