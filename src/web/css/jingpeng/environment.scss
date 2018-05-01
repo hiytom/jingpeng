@@ -122,7 +122,7 @@
 .mod-img-right,.mod-img-left{
     height: 870px;
     .wrap-txt{
-        float: left;
+        // float: left;
         background-color: #f0f0f0;
         .panel-txt{
             width: 530px;
@@ -133,19 +133,81 @@
         }
         
     }
-    .wrap-img{
-        @extend .g_bg_img;
-    }
-}
-//通风模式与环境设备控制
-.mod-img-left{
-    .wrap-txt{
-        float: right;
-    }
 }
 
-.banner-sm{
+.banner-sm,.banner-bottom{
     width: 100%;
     height: 380px;
     @extend .g_bg_img;
+    margin-bottom: 140px;
+}
+
+//风机
+.mod-fengji{
+    .title{
+        font-size: 34px;
+        line-height: 1;
+        font-weight: bold;
+    }
+    .top{
+        text-align: center;
+        .desc{
+            font-size: 18px;
+            color:$color_gray;
+            width: 580px;
+            margin: 23px auto 0;
+            line-height: 1.8;
+        }
+        .m-grid{
+            margin-top:88px;
+            dt{
+                background-color: #f2f2f2;
+                width:334px;
+                height: 238px;
+                overflow: hidden;
+                margin-bottom: 50px;
+            }
+            dd{
+                text-align: center;
+                font-size: 20px;
+                color: $color_gray;
+            }
+        }
+    }
+    .bottom{
+        height: 692px;
+        .wrap-txt{
+            background-color: white;
+            padding-right: 20px;
+            .panel-txt{
+                width:100%;
+            }
+            .subtitle{
+                color: $color_main;
+                font-size: 20px;
+                line-height: 1;
+                margin:30px 0;
+            }
+            li{
+                font-size: 20px;
+                color: $color_gray;
+                margin-bottom: 13px;
+            }
+            .tips{
+                font-size: 31px;
+                margin-top: 25px;
+            }
+        }
+        .wrap-img{
+            position: relative;
+            .img{
+                @extend .g_v_mid;
+                right: 130px;
+            }
+        }
+    }
+}
+
+.banner-bottom{
+    height: 870px;
 }

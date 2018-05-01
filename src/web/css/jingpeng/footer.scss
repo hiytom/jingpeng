@@ -1,185 +1,194 @@
 @import "_var";
-
-.footer{
+.footer {
     margin-top: 60px;
     background-color: #eeeeee;
-    .kefu{
+    .kefu {
         height: 74px;
         line-height: 74px;
         font-size: 24px;
         color: white;
         background-color: $color_main;
-        width:100%;
-        .left{
+        width: 100%;
+        .left {
             float: left;
             padding-left: 30px;
         }
-        .list{
+        .list {
             float: right;
-            .item{
+            .item {
                 float: left;
                 margin-left: 40px;
             }
         }
     }
-    .top{
-        border-bottom:2px solid #dcdcdc;
-        padding:70px 22px 22px 28px;
+    .top {
+        border-bottom: 2px solid #dcdcdc;
+        padding: 70px 22px 22px 28px;
         width: 100%;
-        .left{
+        .left {
             float: left;
-            .item{
+            .item {
                 float: left;
                 margin-right: 32px;
                 font-size: 14px;
             }
         }
-        .right{
+        .right {
             float: right;
-            .item{
+            .item {
                 position: relative;
                 font-size: 12px;
                 float: left;
                 margin-left: 25px;
-                a{
-                    color:#878787;
+                a {
+                    color: #878787;
                 }
-                &::after{
+                &::after {
                     content: " ";
                     position: absolute;
-                    top:50%;
-                    margin-top:-5px;
+                    top: 50%;
+                    margin-top: -5px;
                     width: 1px;
                     height: 10px;
-                    background-color:#878787;
+                    background-color: #878787;
                     right: -12px;
                 }
-                &:last-of-type:after{
+                &:last-of-type:after {
                     display: none;
                 }
             }
         }
     }
-}
-.middle{
-    padding:50px 0 18px 0px;
-    border-bottom:2px solid #dcdcdc;
-    width:100%;
-    .title{
-        color:$color_main;
-        font-weight: bold;
-        font-size:14px;
-        line-height: 27px;
-        .icon{
-            float: left;
-            margin-right: 8px;
-        }
-    }
-    .phone,.date,.address,.email{padding-left: 35px;color:#929292;}
-    .phone{
-        font-size:18px;
-        color:#535353;
-    }
-    .list{
-        float: left;
-        margin-right: 60px;
-    }
-}
-.bottom{
-    position: relative;
-    width:100%;
-    padding-top:64px;
-    .list{
-        float: left;
-        padding-left: 34px;
-        width: 836px;
-        .item{
-            float: left;
-            color:#929292;
-            margin-right: 100px;
-            margin-bottom: 14px;
-            &:nth-of-type(3){
-                margin-left: -14px;
+    .middle {
+        padding: 50px 0 18px 0px;
+        border-bottom: 2px solid #dcdcdc;
+        width: 100%;
+        .title {
+            color: $color_main;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 27px;
+            .icon {
+                float: left;
+                margin-right: 8px;
             }
         }
-        b{
-            color:#616161;
+        .phone,
+        .date,
+        .address,
+        .email {
+            padding-left: 35px;
+            color: #929292;
+        }
+        .phone {
+            font-size: 18px;
+            color: #535353;
+        }
+        .list {
+            float: left;
+            margin-right: 60px;
+        }
+    }
+    .bottom {
+        position: relative;
+        width: 100%;
+        padding-top: 64px;
+        .list {
+            float: left;
+            padding-left: 34px;
+            width: 836px;
+            .item {
+                float: left;
+                color: #929292;
+                margin-right: 100px;
+                margin-bottom: 14px;
+                &:nth-of-type(3) {
+                    margin-left: -14px;
+                }
+            }
+            b {
+                color: #616161;
+                font-weight: normal;
+            }
+        }
+        .right {
+            position: absolute;
+            top: 28px;
+            right: 23px;
+            .item {
+                float: left;
+                margin-left: 25px;
+                .title {
+                    color: $color_main;
+                    font-size: 16px;
+                    text-align: center;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+    .copyright {
+        width: 100%;
+        padding: 50px 0 60px;
+        color: #929292;
+        .left {
+            padding-left: 34px;
+            float: left;
+        }
+        .right {
+            float: right;
+            padding-right: 22px;
+        }
+        b {
+            color: #616161;
             font-weight: normal;
         }
+    } //icon
+    .icon-1,
+    .icon-2,
+    .icon-3,
+    .icon-qq,
+    .icon-wechat,
+    .icon-phone,
+    .icon-arrow,
+        {
+        background-image: url(../../imgs/jingpeng/footer-sprites.png);
     }
-    .right{
-        position: absolute;
-        top:28px;
-        right:23px;
-        .item{
-            float: left;
-            margin-left: 25px;
-            .title{
-                color:$color_main;
-                font-size: 16px;
-                text-align: center;
-                margin-bottom:13px;
-            }
-        }
+    .icon-1 {
+        background-position: -28px -27px;
+        width: 27px;
+        height: 27px;
+    }
+    .icon-2 {
+        background-position: 0px -27px;
+        width: 28px;
+        height: 28px;
+    }
+    .icon-3 {
+        background-position: 0px -55px;
+        width: 27px;
+        height: 27px;
+    } //   qq
+    .icon-qq {
+        background-position: -65px 0px;
+        width: 26px;
+        height: 29px;
+    }
+    .icon-wechat {
+        background-position: 0px 0px;
+        width: 33px;
+        height: 27px;
+    }
+    .icon-phone {
+        background-position: -33px 0px;
+        width: 32px;
+        height: 26px;
+    }
+    .icon-arrow {
+        position: relative;
+        top: -7px;
+        background-position: -27px -55px;
+        width: 27px;
+        height: 16px;
     }
 }
-.copyright{
-    width:100%;
-    padding:50px 0 60px;
-    color:#929292;
-    .left{
-        padding-left: 34px;
-        float: left;
-    }
-    .right{
-        float: right;
-        padding-right:22px;
-    }
-    b{
-        color:#616161;
-        font-weight: normal;
-    }
-}
-
-//icon
-.icon-1,.icon-2,.icon-3,.icon-qq,.icon-wechat,.icon-phone,.icon-arrow,{
-    background-image: url(../../imgs/jingpeng/footer-sprites.png);
-} 
-.icon-1{
-    background-position: -28px -27px;
-    width: 27px;
-    height: 27px;
-  }
-  .icon-2 {
-    background-position: 0px -27px;
-    width: 28px;
-    height: 28px;
-  }
-  .icon-3 {
-    background-position: 0px -55px;
-    width: 27px;
-    height: 27px;
-  }
-//   qq
-  .icon-qq {
-    background-position: -65px 0px;
-    width: 26px;
-    height: 29px;
-  }
-  .icon-wechat {
-    background-position: 0px 0px;
-    width: 33px;
-    height: 27px;
-  }
-  .icon-phone {
-    background-position: -33px 0px;
-    width: 32px;
-    height: 26px;
-  }
-  .icon-arrow {
-    position: relative;
-    top: -7px;
-    background-position: -27px -55px;
-    width: 27px;
-    height: 16px;
-  }

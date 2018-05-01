@@ -1,0 +1,8 @@
+@import 'base.scss';
+@import '_col2';
+
+.mod-banner{
+    height: 738px;
+    width: 100%;
+    @extend .g_bg_img;
+}

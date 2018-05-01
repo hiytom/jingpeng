@@ -26,4 +26,21 @@
             }
         }
     }
+    .wrap-img{
+        @extend .g_bg_img;
+    }
+}
+
+// 图片在左边的情况
+.mod-img-left{
+    .wrap-img{
+        float: left;
+    }
+    
+}
+//图片在右边的情况
+.mod-img-right{
+    .wrap-txt{
+        float: left;
+    }
 }
