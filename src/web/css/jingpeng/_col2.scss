@@ -1,0 +1,29 @@
+.l-col2{
+    .wrap-common{
+        font-size: 0;
+        height: 100%;
+    }
+    .wrap-img,.wrap-txt{
+        position: relative;
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        font-size: 0;
+    }
+    .wrap-txt{
+        .panel-txt{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate3d(-50%,-50%,0);
+            -moz-transform: translate3d(-50%,-50%,0);
+            -ms-transform: translate3d(-50%,-50%,0);
+            transform: translate3d(-50%,-50%,0);
+            .title{
+                font-size: 42px;
+                font-weight: bold;
+                line-height: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+@import 'base.scss';
+@import '_col2';
+
+.mod-banner{
+    width:100%;
+    height: 736px;
+    @extend .g_bg_img;
+}
+
+// 环境控制
+.mod-huanjing{
+    height: 884px;
+    .wrap-common{
+        border-bottom: 1px solid $border_gray;
+    }
+    .wrap-txt{
+        .panel-txt{
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 12px;
+            text-align: justify;
+        }
+        .title{
+            margin-bottom:24px;
+        }
+        .subtitle{
+            font-size: 24px;
+        }
+        .subtitle,p{
+            color:$color_gray;
+            margin-bottom:28px;
+        }
+        p{
+            font-size: 20px;
+            line-height: 1.6;
+        }
+    }
+    .wrap-img{
+        text-align: center;
+        .img{
+            @extend .g_v_c_mid;
+        }
+    }
+}
+
+// 中央控制器
+.mod-zhongyang{
+    padding:110px 0 0;
+    text-align: center;
+    .common-title{
+        margin-bottom:30px;
+    }
+    .common-desc{
+        font-size: 20px;
+        line-height: 1.8;
+    }
+    .col2{
+        margin-top:150px;
+        border-bottom: 1px solid $border_gray;
+        padding-bottom:112px;
+        height: 330px;
+        .left{
+            position: relative;
+            width: 38%;
+            height: 100%;
+            float: left;
+            .img{
+                height: 320px;
+                @extend .g_v_c_mid;
+            }
+        }
+        .right{
+            float: left;
+            width: 62%;
+            height: 100%;
+            .edit-box{
+                display: inline-block;
+                padding-left: 30px;
+                .title{
+                    font-size: 32px;
+                    color:$color_main;
+                    text-align: left;
+                    margin-bottom:30px;
+                    line-height: 1;
+                }
+                li{
+                    text-align: left;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    margin-bottom:12px;
+                    color:$color_gray;
+                }
+            }
+        }
+    }
+    .m-grid{
+        padding:90px 0 8px;
+        .m-justify-item{
+            width: 334px;
+            margin-bottom: 82px;
+        }
+        dt{
+            position: relative;
+            width:332px;
+            height: 238px;
+            background-color: #eeeeee;
+            .img{
+                @extend .g_c_mid;
+                bottom:0;
+            }
+        }
+        dd{
+            font-size: 20px;
+            text-align: center;
+            color:$color_gray;
+            margin-top: 50px;
+        }
+    }
+}
+
+// 通风模式与环境设备控制
+.mod-img-right,.mod-img-left{
+    height: 870px;
+    .wrap-txt{
+        float: left;
+        background-color: #f0f0f0;
+        .panel-txt{
+            width: 530px;
+            .desc{
+                font-size: 20px;
+                color: $color_gray;
+            }
+        }
+        
+    }
+    .wrap-img{
+        @extend .g_bg_img;
+    }
+}
+//通风模式与环境设备控制
+.mod-img-left{
+    .wrap-txt{
+        float: right;
+    }
+}
+
+.banner-sm{
+    width: 100%;
+    height: 380px;
+    @extend .g_bg_img;
+}
